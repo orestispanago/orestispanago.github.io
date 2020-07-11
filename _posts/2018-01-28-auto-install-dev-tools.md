@@ -3,12 +3,11 @@ title: "Auto-install dev tools on Linux"
 date: 2018-01-28
 tags: [automation, linux, shell]
 header:
-  image: "/images/perceptron/percept.jpg"
+  image: "/images/bash_logo.png"
 excerpt: "Automation, Linux, Shell scripting"
 mathjax: "true"
 ---
 
-# Auto-install dev tools on Linux
 
 One of the most frustrating parts of setting up a new machine is custom software installation. The most convenient way of getting through the process is using a custom installation script.  
 The installation scripts have been tested on Linux Mint 19.
@@ -68,7 +67,7 @@ flatpak install flathub org.gnome.DejaDup -y
 ```
 
 Of course, ```snap``` can be used in similar way.  
-[Here](https://www.youtube.com/watch?v=9HuExVD56Bo) is a nice video on packaging systems from *The Linux Experinment* channel.
+[Here](https://www.youtube.com/watch?v=9HuExVD56Bo) is a nice video on packaging systems from *The Linux Experiment* channel.
 
 
 To apply my custom settings to each app, I restore my home folder which I have backed up using Deja-Dup. This is a convenient way of preserving installed packages, logins, even full IDE installations, such as netbeans.
