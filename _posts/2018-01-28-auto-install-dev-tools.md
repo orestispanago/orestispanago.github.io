@@ -3,7 +3,7 @@ title: "Auto-install dev tools on Linux"
 date: 2018-01-28
 tags: [automation, linux, shell]
 header:
-  image: "/images/bash_logo.png"
+  image: ""
 excerpt: "Automation, Linux, Shell scripting"
 mathjax: "true"
 ---
