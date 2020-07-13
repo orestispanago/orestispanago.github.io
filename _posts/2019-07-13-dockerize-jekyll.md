@@ -8,7 +8,7 @@ excerpt: "Automation, Linux, Shell scripting, Docker, Jekyll"
 ---
 
 
-Jekyll is a popular static site generator writen in Ruby. In fact, this particular blog is hosted using Jekyll.
+Jekyll is a popular static site generator written in Ruby. In fact, this particular blog is hosted using Jekyll.
 Running a blog on Jekyll required installing Ruby and its dependencies, Jekyll, building the app and then running it.
 Docker comes in handy to avoid all that hassle.
 
@@ -33,3 +33,5 @@ jekyll:
   volumes:
     - .:/srv/jekyll
 ```
+To build the container for the first time, run `docker-compose up` (consider adding `-d` flag after the first test). Docker automatilcally names your container as `<projecttname>_jekyll_1`.
+From now on you can use the container name to start it without rebuilding it.
