@@ -1,5 +1,5 @@
 ---
-title: "Auto-install dev tools on Linux"
+title: "Auto-install dev tools on LinuxM"
 date: 2018-01-28
 tags: [automation, linux, shell]
 header:
