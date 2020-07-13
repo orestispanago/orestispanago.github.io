@@ -1,16 +1,17 @@
 ---
-title: "Auto-install dev tools on LinuxM"
-date: 2018-01-28
+title: "Auto-install dev tools on Linux"
+date: 2019-07-29
 tags: [automation, linux, shell]
 header:
-  image: ""
+  image: #""
 excerpt: "Automation, Linux, Shell scripting"
-mathjax: "true"
 ---
 
 
 One of the most frustrating parts of setting up a new machine is custom software installation. The most convenient way of getting through the process is using a custom installation script.  
 The installation scripts have been tested on Linux Mint 19.
+
+![alt text](/images/bash-mint.png)
 
 ### TL;DR
 Download the installation scripts for my web-dev and data-sci tools [here](https://github.com/orestispanago/Install-dev-tools).  
