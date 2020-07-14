@@ -7,18 +7,14 @@ header:
 excerpt: "Plot non-square number of subplots with matplotlib"
 ---
 Plotting multiple subplots in one figure is commonly used in data reporting tasks.
-However, notice that a non-square number of plots generates blank axis.
+However, a non-square number of plots generates blank axis.
 
 
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
-```
 
-Let's generate some data
-
-
-```python
+# Generate data
 x = np.linspace(0,1,10)
 y = x**2
 ```
