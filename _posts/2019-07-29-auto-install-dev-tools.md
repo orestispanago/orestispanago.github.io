@@ -4,23 +4,23 @@ date: 2019-07-29
 tags: [automation, linux, shell]
 header:
   image: #""
-excerpt: "Automation, Linux, Shell scripting"
+excerpt: "Automate the process of setting up a development environment on a new machine"
 ---
 
 
-One of the most frustrating parts of setting up a new machine is custom software installation. The most convenient way of getting through the process is using a custom installation script.  
-The installation scripts have been tested on Linux Mint 19.
+The most time-consuming part of setting up a new machine is software installation. A convenient way of getting through the process is using a custom installation script.  
+The scripts described here have been tested on Linux Mint 19.
 
 ![alt text](/images/bash-mint.png)
 
-### TL;DR
-Download the installation scripts for my web-dev and data-sci tools [here](https://github.com/orestispanago/Install-dev-tools).  
+## TL;DR
+Download the installation scripts for my web developement and data science tools [here](https://github.com/orestispanago/Install-dev-tools).  
 
 Restore home folder backup using Deja-Dup to apply custom app settings.
 
-### Detailed version
+## Detailed version
 
-##### 1. Web development tools
+### 1. Web development tools
 
 Programming languages can easily be installed from the command line, e.g. nodejs:
 
@@ -71,4 +71,42 @@ Of course, ```snap``` can be used in similar way.
 [Here](https://www.youtube.com/watch?v=9HuExVD56Bo) is a nice video on packaging systems from *The Linux Experiment* channel.
 
 
-To apply my custom settings to each app, I restore my home folder which I have backed up using Deja-Dup. This is a convenient way of preserving installed packages, logins, even full IDE installations, such as netbeans.
+To apply my custom settings to each app, I restore my home folder which I have backed up using Deja-Dup. This is a convenient way of preserving installed packages, logins, even full IDE installations, such as netbeans.  
+
+### 2. Conda and tools
+
+Anaconda/miniconda can also be installed in your home folder, so it can be backed up and restored as well.
+In case of no backup or a brand new miniconda installation, you may use the script provided [here](https://github.com/orestispanago/Install-dev-tools/blob/master/miniconda_install.sh).
+
+Download Miniconda or Anaconda. I prefer Miniconda, as it is takes up less storage (Anaconda installation cam take up to 6GB!).
+
+```bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
+To run the miniconda installer in silent mode use the `-b` flag and `-p` to specify the installation directory. I prefer a hidden folder.
+
+```bash
+bash Miniconda3-latest-Linux-x86_64.sh -b -p /home/orestis/.miniconda3
+```
+
+In order to use conda, we need to initialize it, however `conda init` won't work unless we hook it to the current shell.
+
+```bash
+eval "$(/home/orestis/.miniconda3/bin/conda shell.bash hook)"
+conda init
+```
+
+Now we can install packages or apps using `conda` or `pip`.
+```bash
+conda install spyder -y
+conda install jupyter -y
+
+pip install pandas
+pip install matplotlib
+pip install seaborn
+```
+Our base data wrangling environment is ready. One optional step is to set `conda` not to be activated on startup and get rid of the `(base)` indication in our shell prompt.
+```bash
+conda config --set auto_activate_base false
+```
+To use `conda` from now on, use `conda activate base`.

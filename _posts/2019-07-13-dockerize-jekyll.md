@@ -4,7 +4,7 @@ date: 2019-07-13
 tags: [automation, docker, jekyll]
 header:
   image: # "/images/jekyll-on-docker.png"
-  excerpt: "Automation, Docker, Jekyll"
+excerpt: "Set up a docker container for Jekyll static site generator"
 ---
 
 
