@@ -1,7 +1,7 @@
 ---
 title: "Plot half scatter mattrix with python"
 date: 2019-01-15
-tags: [python, data, visualization]
+tags: [tutorials, python, data, visualization]
 header:
   image: #""
 excerpt: "Plot the lower triangle of a scatter mattrix using Seaborn"

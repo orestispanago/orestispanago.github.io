@@ -1,7 +1,8 @@
 ---
 title: "Auto-install dev tools on Linux"
 date: 2019-07-29
-tags: [automation, linux, shell]
+tags: [tutorials, automation, linux, shell]
+permalink: /tutorials/:title
 header:
   image: #""
 excerpt: "Automate the process of setting up a development environment on a new machine"

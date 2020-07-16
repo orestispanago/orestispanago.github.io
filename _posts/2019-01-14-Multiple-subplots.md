@@ -1,7 +1,7 @@
 ---
 title: "Multiple subplots with python"
 date: 2019-01-14
-tags: [python, data, visualization]
+tags: [tutorials, python, data, visualization]
 header:
   image: #""
 excerpt: "Plot non-square number of subplots with matplotlib"

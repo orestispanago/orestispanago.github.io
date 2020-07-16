@@ -13,4 +13,6 @@ header:
 
 I'm a Physicist with more than 2 years of experience in management of research projects. During my research employment I developed data wrangling, exploratory analysis, and data visualization skills. My fields of interest are data analysis, web development, tasks automation, SBCs, microcontrollers.
 
-Etc, etc, etc
+Download resume [here][1]
+
+[1]:{{ site.url }}/download/CV-OrestisPanagopoulos.pdf
