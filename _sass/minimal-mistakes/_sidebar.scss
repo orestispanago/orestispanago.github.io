@@ -8,6 +8,7 @@
 
 .sidebar {
   @include clearfix();
+  padding-top: $masthead-height;
   margin-bottom: 1em;
 
   @include breakpoint(max-width $large) {
@@ -33,7 +34,7 @@
       overflow-y: auto;
       /* calculate height of nav list */
       height: calc(
-        100vh - 90px - 2em
+        100vh - $masthead-heigt - 2em
       ); // viewport height - approx. masthead height - main content top margin
     }
   }
